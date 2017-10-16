@@ -1,0 +1,27 @@
+{
+	"alexaSkillThisDayInHistory": [
+		{"PutRequest":{"Item":{"date":{"S":"12/9"},"fact":{"S":"In 2000, the United States Supreme Court voted, 5 to 4, to stop the vote counting in Florida, ending Vice President Al Gore’s presidential hopes."}}}},
+		{"PutRequest":{"Item":{"date":{"S":"12/10"},"fact":{"S":"In 1948, the U.N. General Assembly adopted its Universal Declaration on Human Rights."}}}},
+		{"PutRequest":{"Item":{"date":{"S":"12/11"},"fact":{"S":"In 1941, Germany and Italy declared war on the United States; the U.S. responded in kind."}}}},
+		{"PutRequest":{"Item":{"date":{"S":"12/12"},"fact":{"S":"In 1963, Kenya gained its independence from Britain."}}}},
+		{"PutRequest":{"Item":{"date":{"S":"12/13"},"fact":{"S":"In 1981, authorities in Poland imposed martial law in a crackdown on the Solidarity labor movement. Martial law formally ended in 1983."}}}},
+		{"PutRequest":{"Item":{"date":{"S":"12/14"},"fact":{"S":"In 1981, Israel annexed the Golan Heights, seized from Syria in 1967."}}}},
+		{"PutRequest":{"Item":{"date":{"S":"12/15"},"fact":{"S":"In 1916, the French defeated the Germans in the World War I Battle of Verdun."}}}},
+		{"PutRequest":{"Item":{"date":{"S":"12/16"},"fact":{"S":"In 1950, President Truman proclaimed a national state of emergency in order to fight “Communist imperialism.”"}}}},
+		{"PutRequest":{"Item":{"date":{"S":"12/17"},"fact":{"S":"In 1903, Orville and Wilbur Wright took the first successful man-powered airplane flights, near Kitty Hawk, North Carolina."}}}},
+		{"PutRequest":{"Item":{"date":{"S":"12/18"},"fact":{"S":"In 1957, the Shippingport Atomic Power Station in Pennsylvania, the first civilian nuclear facility to generate electricity in the United States, went online."}}}},
+		{"PutRequest":{"Item":{"date":{"S":"12/19"},"fact":{"S":"In 1998, President Bill Clinton was impeached on charges of perjury and obstruction of justice by a divided House of Representatives, which recommended virtually along party lines that the Senate remove the nation’s 42d President from office."}}}},
+		{"PutRequest":{"Item":{"date":{"S":"12/20"},"fact":{"S":"In 1989, the United States launched Operation Just Cause, sending troops into Panama to topple the government of General Manuel Noriega."}}}},
+		{"PutRequest":{"Item":{"date":{"S":"12/21"},"fact":{"S":"In 1988, a terrorist bomb exploded aboard a Pan Am Boeing 747 over Lockerbie, Scotland, killing 270 people."}}}},
+		{"PutRequest":{"Item":{"date":{"S":"12/22"},"fact":{"S":"In 1864, during the Civil War, Union Gen. William T. Sherman sent a message to President Lincoln from Georgia, saying, “I beg to present you as a Christmas gift the city of Savannah.”"}}}},
+		{"PutRequest":{"Item":{"date":{"S":"12/23"},"fact":{"S":"In 1986, the experimental airplane Voyager, piloted by Dick Rutan and Jeana Yeager, completed the first non-stop, around-the-world flight without refueling as it landed safely at Edwards Air Force Base in California."}}}},
+		{"PutRequest":{"Item":{"date":{"S":"12/24"},"fact":{"S":"In 1992, President Bush pardoned former Defense Secretary Caspar Weinberger and five others in the Iran-Contra scandal."}}}},
+		{"PutRequest":{"Item":{"date":{"S":"12/25"},"fact":{"S":"In 1991, Soviet President Mikhail S. Gorbachev went on television to announce his resignation."}}}},
+		{"PutRequest":{"Item":{"date":{"S":"12/26"},"fact":{"S":"In 2004, the world’s most powerful earthquake in 40 years erupted underwater off the Indonesian island of Sumatra and sent walls of water barreling thousands of miles, killing more than 200,000 people in half a dozen countries across South and Southeast Asia."}}}},
+		{"PutRequest":{"Item":{"date":{"S":"12/27"},"fact":{"S":"In 1979, Soviet forces seized control of Afghanistan. President Hafizullah Amin, who was overthrown and executed, was replaced by Babrak Karmal."}}}},
+		{"PutRequest":{"Item":{"date":{"S":"12/28"},"fact":{"S":"In 1981, Elizabeth Jordan Carr, the first American test-tube baby, was born in Norfolk, Va."}}}},
+		{"PutRequest":{"Item":{"date":{"S":"12/29"},"fact":{"S":"In 1940, during World War II, Germany began dropping incendiary bombs on London."}}}},
+		{"PutRequest":{"Item":{"date":{"S":"12/30"},"fact":{"S":"In 1972, the United States halted its heavy bombing of North Vietnam."}}}},
+		{"PutRequest":{"Item":{"date":{"S":"12/31"},"fact":{"S":"In 1946, President Truman officially proclaimed the end of hostilities in World War II."}}}}
+	]
+}
