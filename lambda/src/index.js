@@ -63,29 +63,29 @@ const handlers = {
       readDynamoItem(params, factData=>{
           // TODO after 5 uses add details about the flash briefing to the cardRenderer (every third time)
           // TODO after 10 uses add details about the flash brieginf to the speak (only once)
-          if(supportsDisplay.call(this)||isSimulator.call(this)) {
-            if (debug_mode) {console.log("has display:"+ supportsDisplay.call(this))};
-            if (debug_mode) {console.log("is simulator:"+isSimulator.call(this))};
-            var content = {
-               "hasDisplaySpeechOutput" : factData,
-               "hasDisplayRepromptText" : '',
-               "simpleCardTitle" : SKILL_NAME + ': ' + dateForStream,
-               "simpleCardContent" : factData,
-               "bodyTemplateTitle" : SKILL_NAME + ': ' + dateForStream,
-               "bodyTemplateContent" : '',
-               //"backgroundImage" : backgroundImage,
-               //"cardImageLarge" : cardImageLarge,
-               //"cardImageSmall" : cardImageSmall,
-               "templateToken" : "sceneBodyTemplate",
-               //"hintText" : hintText,
-               "askOrTell" : ":tell",
-               "sessionAttributes": {}
-            };
-            renderTemplate.call(this, content);
-          } else {
-            this.response.speak(speechOutput + factData);
+          // if(supportsDisplay.call(this)||isSimulator.call(this)) {
+          //   if (debug_mode) {console.log("has display:"+ supportsDisplay.call(this))};
+          //   if (debug_mode) {console.log("is simulator:"+isSimulator.call(this))};
+          //   var content = {
+          //      "hasDisplaySpeechOutput" : factData,
+          //      "hasDisplayRepromptText" : '',
+          //      "simpleCardTitle" : SKILL_NAME + ': ' + dateForStream,
+          //      "simpleCardContent" : factData,
+          //      "bodyTemplateTitle" : SKILL_NAME + ': ' + dateForStream,
+          //      "bodyTemplateContent" : '',
+          //      //"backgroundImage" : backgroundImage,
+          //      //"cardImageLarge" : cardImageLarge,
+          //      //"cardImageSmall" : cardImageSmall,
+          //      "templateToken" : "sceneBodyTemplate",
+          //      //"hintText" : hintText,
+          //      "askOrTell" : ":tell",
+          //      "sessionAttributes": {}
+          //   };
+          //   renderTemplate.call(this, content);
+          // } else {
+            this.response.speak(speechOutput + factData + '<break time=\"1.618s\" />');
             this.emit(':responseReady');
-          }
+          // }
 
       });
     },
@@ -213,5 +213,4 @@ function renderTemplate (content) {
           //this.response.speak("Thanks for chatting, goodbye");
           this.emit(':responseReady');
    }
-
 }
