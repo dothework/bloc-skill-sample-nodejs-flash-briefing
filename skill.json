@@ -71,7 +71,24 @@
     "apis": {
       "custom": {
         "endpoint": {
-          "sourceDir": "lambda/src"
+          "sourceDir": "lambda/src/default-NA"
+        },
+        "regions": {
+          "EU": {
+            "endpoint": {
+              "sourceDir": "lambda/src/EU-IN"
+            }
+          },
+          "NA": {
+            "endpoint": {
+              "sourceDir": "lambda/src/default-NA"
+            }
+          },
+          "IN": {
+            "endpoint": {
+              "sourceDir": "lambda/src/EU-IN"
+            }
+          }
         }
       }
     },
