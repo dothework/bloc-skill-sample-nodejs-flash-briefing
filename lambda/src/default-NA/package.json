@@ -18,6 +18,7 @@
   "author": "Amazon.com",
   "license": "Apache-2.0",
   "dependencies": {
-    "alexa-sdk": "^1.0.12"
+    "alexa-sdk": "^1.0.12",
+    "voicelabs": "*"
   }
 }

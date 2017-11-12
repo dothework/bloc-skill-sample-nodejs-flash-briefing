@@ -3,6 +3,8 @@ const Alexa = require('alexa-sdk');
 const AWS = require('aws-sdk');
 AWS.config.update({region: 'eu-west-1'});
 const db = new AWS.DynamoDB();
+const VoiceLabs = require("voicelabs")('b53039f0-c7ee-11a7-2e3e-0eb19d13e26e');
+
 const APP_ID = 'amzn1.ask.skill.e4f39f24-69e8-4166-87fd-88281166e588';
 const tableName = 'alexaSkillThisDayInHistory';
 const SKILL_NAME = 'Today In History';
@@ -84,7 +86,9 @@ const handlers = {
           //   renderTemplate.call(this, content);
           // } else {
             this.response.speak(speechOutput + factData + '<break time=\"1.618s\" />');
-            this.emit(':responseReady');
+            VoiceLabs.track(this.event.session, 'LaunchRequest', null, speechOutput + factData, (error, response) => {
+              this.emit(':responseReady');
+            });
           // }
 
       });
@@ -94,7 +98,9 @@ const handlers = {
         const reprompt = HELP_REPROMPT;
 
         this.response.speak(speechOutput).listen(reprompt);
-        this.emit(':responseReady');
+        VoiceLabs.track(this.event.session, 'AMAZON.HelpIntent', null, speechOutput, (error, response) => {
+          this.emit(':responseReady');
+        });
     },
     'AMAZON.CancelIntent': function () {
         // do nothing, save track it

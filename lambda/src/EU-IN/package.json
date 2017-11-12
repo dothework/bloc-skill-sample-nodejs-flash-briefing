@@ -4,10 +4,10 @@
   "description": "today in history skill",
   "main": "index.js",
   "scripts": {
-      "invoke": "aws lambda invoke --function-name 'alexaSkillThisDayInHistory' --payload fileb://../tests/events/alexa-start-session.json ../tests/out.txt && cat ../tests/out.txt",
+      "invoke": "aws lambda invoke --function-name 'alexaSkillThisDayInHistoryEU-IN' --payload fileb://../tests/events/alexa-start-session.json ../tests/out.txt && cat ../tests/out.txt",
       "test": "node ../tests/test.js",
       "deploy": "npm run zip && npm run upload",
-      "upload": "aws lambda update-function-code --function-name 'alexaSkillThisDayInHistory' --zip-file fileb://../index.zip",
+      "upload": "aws lambda update-function-code --function-name 'alexaSkillThisDayInHistoryEU-IN' --zip-file fileb://../index.zip --region eu-west-1",
       "zip": "zip -r ../index.zip . -x 'package.json' -x '*.git*' -x '*.DS_Store'"
   },
   "keywords": [
@@ -18,6 +18,7 @@
   "author": "Amazon.com",
   "license": "Apache-2.0",
   "dependencies": {
-    "alexa-sdk": "^1.0.12"
+    "alexa-sdk": "^1.0.12",
+    "voicelabs": "*"
   }
 }
