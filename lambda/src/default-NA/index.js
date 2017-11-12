@@ -3,7 +3,7 @@ const Alexa = require('alexa-sdk');
 const AWS = require('aws-sdk');
 AWS.config.update({region: 'us-east-1'});
 const db = new AWS.DynamoDB();
-var VoiceLabs = require("voicelabs")('68572f50-c7e2-11a7-2e3e-0eb19d13e26e');
+const VoiceLabs = require("voicelabs")('68572f50-c7e2-11a7-2e3e-0eb19d13e26e');
 
 const APP_ID = 'amzn1.ask.skill.e4f39f24-69e8-4166-87fd-88281166e588';
 const tableName = 'alexaSkillThisDayInHistory';
