@@ -22,6 +22,46 @@
           "smallIconUri": "https://s3.amazonaws.com/sixvoices.alexa.skills/history_today/text-lines-108.png",
           "largeIconUri": "https://s3.amazonaws.com/sixvoices.alexa.skills/history_today/text-lines-512.png"
         },
+        "en-CA": {
+          "summary": "Discover what happened on this day in history.",
+          "examplePhrases": [
+            "Alexa, launch Today's History.",
+            "Alexa, start Today's History.",
+            "Alexa, open Today's History."
+          ],
+          "keywords": [
+            "news",
+            "history",
+            "facts",
+            "information",
+            "daily",
+            "learn"
+          ],
+          "name": "Today In History",
+          "description": "Each day we tell you about a significant event from the past. Learn about history and contemplate if history does, in fact, ​repeat itself.\n\nPlease leave a 5-star review if you love this Skill. Your 5-star reviews encourage us to keep making more great Skills!\n\nFor a full list of our skills, including relaxing ambient sounds for sleep and relaxation, search for “Six Voices” in the Alexa smartphone app.\n\nThis Skill, and all other Skills by Six Voices, are genuinely made by an Amazon-certified “Alexa Champion”, so you always know you’re getting a high-quality experience!",
+          "smallIconUri": "https://s3.amazonaws.com/sixvoices.alexa.skills/history_today/text-lines-108.png",
+          "largeIconUri": "https://s3.amazonaws.com/sixvoices.alexa.skills/history_today/text-lines-512.png"
+        },
+        "en-AU": {
+          "summary": "Discover what happened on this day in history.",
+          "examplePhrases": [
+            "Alexa, launch Today's History.",
+            "Alexa, start Today's History.",
+            "Alexa, open Today's History."
+          ],
+          "keywords": [
+            "news",
+            "history",
+            "facts",
+            "information",
+            "daily",
+            "learn"
+          ],
+          "name": "Today In History",
+          "description": "Each day we tell you about a significant event from the past. Learn about history and contemplate if history does, in fact, ​repeat itself.\n\nPlease leave a 5-star review if you love this Skill. Your 5-star reviews encourage us to keep making more great Skills!\n\nFor a full list of our skills, including relaxing ambient sounds for sleep and relaxation, search for “Six Voices” in the Alexa smartphone app.\n\nThis Skill, and all other Skills by Six Voices, are genuinely made by an Amazon-certified “Alexa Champion”, so you always know you’re getting a high-quality experience!",
+          "smallIconUri": "https://s3.amazonaws.com/sixvoices.alexa.skills/history_today/text-lines-108.png",
+          "largeIconUri": "https://s3.amazonaws.com/sixvoices.alexa.skills/history_today/text-lines-512.png"
+        },
         "en-GB": {
           "summary": "Discover what happened on this day in history.",
           "examplePhrases": [
