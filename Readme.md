@@ -64,12 +64,12 @@ Alexa, flash briefing.
 
 1. Deploy the Lambda function. The Lambda function will be created in ```us-east-1 (Northern Virginia)``` by default. That can be changed by editing `/lambda/src/package.json`. You can also change the name of the function to suit your needs. Save the file. Then navigate into the `/lambda/src` directory and running the npm command: `npm run init` & `npm run deploy`
 
-**Only run the `npm init` command once.** Subsequent executions will fail.  
+	**Only run the `npm init` command once.** Subsequent executions will fail.  
 
-```bash
-$ npm run init
-$ npm run deploy
-```
+	```bash
+	$ npm run init
+	$ npm run deploy
+	```
 
 2. Deploy to the API Gateway.
 
@@ -85,18 +85,7 @@ $ npm run deploy
 
 1. To test, you need to login to Alexa Developer Console, and enable the "Test" switch on your skill from the "Test" Tab.
 
-2. Simulate verbal interaction with your skill through the command line using the following example:
-
-	```bash
-	 $ ask simulate -l en-GB -t "start reindeer trivia"
-
-	 ✓ Simulation created for simulation id: 4a7a9ed8-94b2-40c0-b3bd-fb63d9887fa7
-	◡ Waiting for simulation response{
-	  "status": "SUCCESSFUL",
-	  ...
-	 ```
-
-3. Once the "Test" switch is enabled, your skill can be tested on devices associated with the developer account as well. Speak to Alexa from any enabled device or through your Amazon Mobile App and say :
+2. Once the "Test" switch is enabled, your skill can be tested on devices associated with the developer account as well. Speak to Alexa from any enabled device or through your Amazon Mobile App and say :
 
 	```text
 	Alexa, flash briefing
@@ -114,13 +103,13 @@ $ npm run deploy
 
    Modify the skillTitle constant.
 
-3. Copy this [Google Sheet data template](https://docs.google.com/spreadsheets/d/1_pitjZcZ46vReytXG2sAOg4eD5U2VS_Pe83a1-PoKIQ/edit?usp=sharing) and replace the quote data with your own data. Copy column B, rows 3-368. Paste **Values** Only into column A, rows 3-368. Copy column A, rows 3-268.
+3. ```./lambda/src/data.js```
 
-4.  ```./lambda/src/data.js```
-
-	 Paste the data from step 3 above.
+	 Modify the daily tip/quote data.  
 
 ## Additional Resources
+
+* Use this [Google Sheet data template](https://docs.google.com/spreadsheets/d/1_pitjZcZ46vReytXG2sAOg4eD5U2VS_Pe83a1-PoKIQ/edit?usp=sharing) to ease the creation of your daily tip/quote data. 
 
 ### Community
 * [Amazon Developer Forums](https://forums.developer.amazon.com/spaces/165/index.html) - Join the conversation!
