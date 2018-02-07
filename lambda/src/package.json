@@ -1,0 +1,15 @@
+{
+  "name": "bloc-skill-sample-nodejs-flash-briefing",
+  "version": "1.0.0",
+  "description": "flash briefing skill for bloc students",
+  "main": "index.js",
+  "scripts": {
+      "deploy": "npm run zip && npm run upload",
+      "upload": "aws lambda update-function-code --function-name 'alexaFBSkillQuoteToday' --zip-file fileb://../index.zip --region us-east-1",
+      "zip": "zip -r ../index.zip . -x 'package.json' -x '*.git*' -x '*.DS_Store' -9 -v"
+  },
+  "keywords": [],
+  "author": "github.com/dothework",
+  "license": "Apache-2.0",
+  "dependencies": {}
+}
