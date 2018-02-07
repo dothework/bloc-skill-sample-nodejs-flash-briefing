@@ -46,7 +46,7 @@ Alexa, flash briefing.
 	$ git clone https://github.com/dothework/bloc-skill-sample-nodejs-flash-briefing/
 	```
 
-2. Initiatialize the [ASK CLI](https://developer.amazon.com/docs/smapi/quick-start-alexa-skills-kit-command-line-interface.html) by Navigating into the repository and running npm command: `ask init`. Follow the prompts.
+2. Initiatialize the [ASK CLI](https://developer.amazon.com/docs/smapi/quick-start-alexa-skills-kit-command-line-interface.html) by Navigating into the repository and running the command: `ask init`. Follow the prompts.
 
 	```bash
 	$ cd bloc-skill-sample-nodejs-flash-briefing
@@ -55,13 +55,7 @@ Alexa, flash briefing.
 
 ### Deployment
 
-1. Deploy the Lambda function. The Lambda function will be created in ```us-east-1 (Northern Virginia)``` by default. That can be changed by editing `/lambda/src/package.json`. You can also change the name of the function to suit your needs. Save the file. Then navigate into the `/lambda/src` directory and running the npm command: `npm run init` & `npm run deploy`
-
-	**Only run the `npm run deploy` command after you've created the function in the AWS [Lambda Management Console](https://console.aws.amazon.com/lambda/home).** Executions will fail if the function does not already exist.  
-
-	```bash
-	$ npm run deploy
-	```
+1. Create the Lambda function. You can also change the name of the function to suit your needs. Upload the ```./lamdba/index.zip``` package.
 
 2. Deploy to the API Gateway.
 
@@ -87,25 +81,29 @@ Alexa, flash briefing.
 
 1. ```./skill.json```
 
-   Change the skill name, skill description, feed details, icons, testing instructions etc ...
+  Change the skill name, skill description, feed details, icons, testing instructions etc ...
 
-   See the Skill [Manifest Documentation](https://developer.amazon.com/docs/smapi/skill-manifest.html) for more information.
+  See the Skill [Manifest Documentation](https://developer.amazon.com/docs/smapi/skill-manifest.html) for more information.
 
 2. ```./lambda/src/index.js```
 
-   Modify the skillTitle constant.
+  Modify the skillTitle constant.
 
 3. ```./lambda/src/data.js```
 
-	 Modify the daily tip/quote data.  
+	Modify the daily tip/quote data.  
 
-4. Deploy the Lambda function. Navigate into the `/lambda/src` directory and running the npm command: `npm run deploy`
+4. ```./lamdba/src/package.json```
 
-	 	**Only run the `npm run deploy` command after you've created the function in the AWS [Lambda Management Console](https://console.aws.amazon.com/lambda/home).** Executions will fail if the function does not already exist.  
+	If you changed the name of the lambda function in Deployment Step 1 above modify the `--function-name 'alexaFBSkillQuoteToday'` accordingly.
 
-	 	```bash
-	 	$ npm run deploy
-	 	```
+5. Deploy the Lambda function. Navigate into the `/lambda/src` directory and run the npm command: `npm run deploy`
+
+	**Only run the `npm run deploy` command after you've created the function in the AWS [Lambda Management Console](https://console.aws.amazon.com/lambda/home).** Executions will fail if the function does not already exist.  
+
+	```bash
+	$ npm run deploy
+ ```
 
 ## Additional Resources
 
