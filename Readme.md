@@ -8,14 +8,10 @@ If this is your first time here, you're new to Alexa Skills Development, or you'
 <a href='./instructions/0-intro.md'><img src='https://camo.githubusercontent.com/db9b9ce26327ad3bac57ec4daf0961a382d75790/68747470733a2f2f6d2e6d656469612d616d617a6f6e2e636f6d2f696d616765732f472f30312f6d6f62696c652d617070732f6465782f616c6578612f616c6578612d736b696c6c732d6b69742f7475746f7269616c732f67656e6572616c2f627574746f6e732f627574746f6e5f6765745f737461727465642e5f5454485f2e706e67'></a>
 </p>
 
-
 Be sure to take a look at the [Additional Resources](#additional-resources) at the bottom of this page!
-
 
 ## About
 **Note:** The rest of this readme assumes you have your developer environment ready to go and that you have some familiarity with CLI (Command Line Interface) Tools, [AWS](https://aws.amazon.com/), and the [ASK Developer Portal](https://developer.amazon.com/alexa-skills-kit). If not, [click here](./instructions/0-intro.md) for a more detailed walkthrough.
-
-
 
 ### Usage
 
@@ -59,7 +55,7 @@ Alexa, flash briefing.
 
 2. Deploy to the API Gateway.
 
-3. Edit the `url` key:value pair in ```./skill.json```. Replace the existing value of `https://aaaaaaaaaa.execute-api.us-east-1.amazonaws.com/prod/alexaFBSkillQuoteToday` with your API endpoint from step 2 above.
+3. Edit the url value in ```./skill.json```. Replace the existing value  `https://aaaaaaaaaa.execute-api.us-east-1.amazonaws.com/prod/alexaFBSkillQuoteToday` with your API endpoint from step 2 above.
 
 4. Deploy the skill by running the following command:
 
@@ -87,7 +83,7 @@ Alexa, flash briefing.
 
 2. ```./lambda/src/index.js```
 
-  Modify the skillTitle constant.
+  Modify the `skillTitle` constant.
 
 3. ```./lambda/src/data.js```
 
@@ -103,7 +99,7 @@ Alexa, flash briefing.
 
 	```bash
 	$ npm run deploy
- ```
+	```
 
 ## Additional Resources
 
