@@ -53,27 +53,19 @@ Alexa, flash briefing.
 	$ ask init
 	```
 
-3. Install npm dependencies by navigating into the `/lambda/src` directory and running the npm command: `npm install`
-
-	```bash
-	$ cd lambda/src
-	$ npm install
-	```
-
 ### Deployment
 
 1. Deploy the Lambda function. The Lambda function will be created in ```us-east-1 (Northern Virginia)``` by default. That can be changed by editing `/lambda/src/package.json`. You can also change the name of the function to suit your needs. Save the file. Then navigate into the `/lambda/src` directory and running the npm command: `npm run init` & `npm run deploy`
 
-	**Only run the `npm init` command once.** Subsequent executions will fail.  
+	**Only run the `npm run deploy` command after you've created the function in the AWS [Lambda Management Console](https://console.aws.amazon.com/lambda/home).** Executions will fail if the function does not already exist.  
 
 	```bash
-	$ npm run init
 	$ npm run deploy
 	```
 
 2. Deploy to the API Gateway.
 
-3. Edit the `url` key:value pair. Replace the existing value of `https://aaaaaaaaaa.execute-api.us-east-1.amazonaws.com/prod/alexaFBSkillQuoteToday` with your API endpoint.
+3. Edit the `url` key:value pair in ```./skill.json```. Replace the existing value of `https://aaaaaaaaaa.execute-api.us-east-1.amazonaws.com/prod/alexaFBSkillQuoteToday` with your API endpoint from step 2 above.
 
 4. Deploy the skill by running the following command:
 
@@ -107,9 +99,17 @@ Alexa, flash briefing.
 
 	 Modify the daily tip/quote data.  
 
+4. Deploy the Lambda function. Navigate into the `/lambda/src` directory and running the npm command: `npm run deploy`
+
+	 	**Only run the `npm run deploy` command after you've created the function in the AWS [Lambda Management Console](https://console.aws.amazon.com/lambda/home).** Executions will fail if the function does not already exist.  
+
+	 	```bash
+	 	$ npm run deploy
+	 	```
+
 ## Additional Resources
 
-* Use this [Google Sheet data template](https://docs.google.com/spreadsheets/d/1_pitjZcZ46vReytXG2sAOg4eD5U2VS_Pe83a1-PoKIQ/edit?usp=sharing) to ease the creation of your daily tip/quote data. 
+* Use this [Google Sheet data template](https://docs.google.com/spreadsheets/d/1_pitjZcZ46vReytXG2sAOg4eD5U2VS_Pe83a1-PoKIQ/edit?usp=sharing) to ease the creation of your daily tip/quote data.
 
 ### Community
 * [Amazon Developer Forums](https://forums.developer.amazon.com/spaces/165/index.html) - Join the conversation!
