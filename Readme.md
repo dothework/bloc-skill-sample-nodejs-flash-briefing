@@ -53,11 +53,11 @@ Alexa, flash briefing.
 
 1. Create a Lambda function. This sample expects the name to be _alexaFBSkillQuoteToday_. If you choose another name you will have to adjust accordingly.
 
-	- Do not use a template.
+	- Author from scratch.
 	- Select the Node.js 6.10 runtime.
 	- Set the execution role appropriately.
 	- Do not add any triggers at this point.
-	- Choose 'Upload a .ZIP' file as the Code entry type. Upload the archive located at `./lamdba/index.zip`
+	- Choose 'Upload a .ZIP' file as the Code entry type. Upload the archive located at `./lambda/index.zip`
 	- Save the function.
 
 	> The ASK CLI does not currently support creation and deployment of the backend for Flash Briefing skills.
@@ -65,7 +65,7 @@ Alexa, flash briefing.
 2. Create the API Gateway endpoint. This sample expects the endpoint name to be _alexaFBSkillQuoteToday_. If you choose another name you will have to adjust accordingly.
 
 	- Open the Lambda function created above.
-	- Add an API Gateway Trigger.
+	- Add an API Gateway trigger.
 	- Enter _alexaFBSkillQuoteToday_ as the API name.
 	- Select 'prod' as the Deployment stage.
 	- Choose 'Open' as the Security option.
@@ -90,7 +90,7 @@ Alexa, flash briefing.
 
 	Modify the daily tip/quote data.  
 
-4. ```./lamdba/src/package.json```
+4. ```./lambda/src/package.json```
 
 	If you changed the name of the lambda function in [Deployment Step 1](#deployment) above modify the `--function-name 'alexaFBSkillQuoteToday'` accordingly.
 
@@ -118,7 +118,7 @@ When you have tested your skill and made any final adjustments to the content an
 
 ## Additional Resources
 
-* Use this [Google Sheet data template](https://docs.google.com/spreadsheets/d/1_pitjZcZ46vReytXG2sAOg4eD5U2VS_Pe83a1-PoKIQ/edit?usp=sharing) to ease the creation of your daily tip/quote data.
+* Use this [Google Sheets template](https://docs.google.com/spreadsheets/d/1_pitjZcZ46vReytXG2sAOg4eD5U2VS_Pe83a1-PoKIQ/edit?usp=sharing) to ease the creation of your data.
 
 ### Community
 * [Amazon Developer Forums](https://forums.developer.amazon.com/spaces/165/index.html) - Join the conversation!

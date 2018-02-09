@@ -1,7 +1,7 @@
 {
   "deploy_settings": {
     "default": {
-      "skill_id": "amzn1.ask.skill",
+      "skill_id": "",
       "was_cloned": false
     }
   }
