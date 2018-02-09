@@ -18,12 +18,12 @@ There are two parts to an Alexa skill.  The first part is the [Voice User Interf
     <a href="https://developer.amazon.com/edw/home.html#/skills/list" target="_new"><img src="https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/1-3-alexa-skills-kit._TTH_.png" /></a>
 
 4.  Select **Add A New Skill.** This will get you to the first page of your new Alexa skill.
-
-	[![](1-10-sample-utterances._TTH_.png)](https://developer.amazon.com/edw/home.html#/skill/create/)
+5.
+    <a href="https://developer.amazon.com/edw/home.html#/skill/create/" target="_new"><img src="https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/1-4-add-a-new-skill._TTH_.png" /></a>
 
 5.  **Fill out the Skill Information screen.**  Make sure to review the tips we provide below the screenshot.
 
-    <img src="https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/1-5-skill-information._TTH_.png" />
+    ![](1-10-sample-utterances._TTH_.png)
 
     ### Skill Information Tips
     1.  **Skill Type** For this skill, we are creating a skill using the Flash Briefing Skill API.
