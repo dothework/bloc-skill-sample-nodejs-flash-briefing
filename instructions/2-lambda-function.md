@@ -51,7 +51,7 @@ In the [first step of this guide](../instructions/1-voice-user-interface.md), we
 
 10.	  Alexa expects a response from backend processing within 8 seconds, so after receiving and sending the messages we will be left with around 7 seconds. Remember to keep response times short-and-snappy when designing Skills. If your skill becomes popular you may need to think about how to access data from very large database tables, cope with timeouts when calling external services, cache data, and many other things. Lambda itself is architected to scale well. Scroll down and in the **Basic Settings** increase the timeout to **7** seconds.
 
-12. Configure your **trigger** & setup the **API Gateway**. In the **Add triggers** column on the left select **API Gateway**.
+12. Configure your **trigger** and setup the **API Gateway**. In the **Add triggers** column on the left select **API Gateway**.
 
     ![](02-configure-trigger.png)
 
@@ -62,41 +62,23 @@ In the [first step of this guide](../instructions/1-voice-user-interface.md), we
   	- Click **Add** at the bottom of the API Gateway section.
   	- Scroll up and click **Save** to save all changes and create the API Gateway endpoint.
 
-  	> Consider modifying the API Authorization options as future task.
-
     ![](02-trigger-settings.png)
 
     - Scroll down and copy the **Invoke URL**.
-    - You can click on the Invoke URL link. It should return a JSON value similar to:
-
-    ```JSON
-      {
-        updateDate:'1/10',
-        titleText:'hello',
-        mainText:'Think like a queen. A queen ...'
-      }
-    ```
 
     ![](02-api-endpoint.png)
 
-13. Send a test message to the new function.
+    - You can click on the Invoke URL link. It should return a JSON value similar to:
 
-    Near the top-right of the screen, by the Test and Save buttons, select **Configure test events** in the dropdown.
+	    ```JSON
+	    {
+	      updateDate:'1/10',
+	      titleText:'hello',
+	      mainText:'Think like a queen. A queen ...'
+	    }
+	    ```
 
-    We are creating a **new test event**, so select **Alexa Start Session** and give it a name like **AlexaStart*.
-
-    Update the 2 occurrences of the app id with your actual app id retrieved for the environment variable in the previous step.
-
-    something like changing:
-    ```json
-    "applicationId": "amzn1.ask.skill.[unique-value-here]"
-    ```
-    to
-    ```json
-    "applicationId": "amzn1.ask.skill.3e6f9e91-987c-48b5-123d-45fbe191fdf3"
-    ```
-
-    Press the **Test** button. This is testing the Lambda function standalone and will tell us straight away whether things are working or not.
+    > Consider modifying the API Security option as future task.
 
     <br/><br/>
     <a href="./3-connect-vui-to-code.md"><img src="https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/buttons/button_next_connect_vui_to_code._TTH_.png"/></a>
