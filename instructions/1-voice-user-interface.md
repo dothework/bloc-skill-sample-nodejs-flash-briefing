@@ -27,9 +27,9 @@ There are two parts to an Alexa flash briefing skill.  The first part is the ski
 
 	### Skill Information Tips
 
-  - **Skill Type** For this skill, we are creating a skill using the Flash Briefing Skill API.
-  - **Language** Choose the first language you want to support.  You can add additional languages in the future, but we need to start with one.  (This guide is using U.S. English to start.)
-  - **Name** This is the name that will be shown in the Alexa Skills Store, and the name your users will refer to.
+    - **Skill Type** For this skill, we are creating a skill using the Flash Briefing Skill API.
+    - **Language** Choose the first language you want to support.  You can add additional languages in the future, but we need to start with one.  (This guide is using U.S. English to start.)
+    - **Name** This is the name that will be shown in the Alexa Skills Store, and the name your users will refer to.
 
 6.  Click the **Save** button, then click on **Next** to move to the **Interaction Model**.
 
