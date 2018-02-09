@@ -38,42 +38,35 @@ In the [first step of this guide](../instructions/1-voice-user-interface.md), we
 
     <a href="#"><img src="https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/2-11-create-function-button._TTH_.png" /></a>
 
-9. Configure your trigger. In the **Add triggers** column on the left select **Alexa Skills Kit**.  If you do not see Alexa Skills Kit in the list, jump back to step 3 on this page.
+9.  Upload the sample code.
+  * Under **code entry type** select **Upload a .ZIP file**.
+  * **Upload** the zip file **lambda/index.zip**.
+  * Click **Save**.
+  * Under **code entry type** select **Edit code inline**. You should see our code.
+
+11.  Lambda needs to be provided with all the code and libraries that might be called. We uploaded a zip file with the node_modules that our skill uses (alexa-sdk and xml2js). If you want to create a very simple Alexa Skill, you could use **blueprints** and the **alexa-skill-kit-sdk-factskill**. This creates a Lambda function with the alexa-sdk preloaded.
+If you create your own zip file package then be careful to have everything in the root of the zip and not the custom folder.
+
+	UPLOAD YOUR CODE.
+	YOU WILL CUSTOMIZE THIS IN AN UPCOMING STEP, AND UPDATE THE LAMBDA FUNCTION THEN.
+
+10.	  Alexa expects a response from backend processing within 8 seconds, so after receiving and sending the messages we will be left with around 7 seconds. Remember to keep response times short-and-snappy when designing Skills. If your skill becomes popular you may need to think about how to access data from very large database tables, cope with timeouts when calling external services, cache data, and many other things. Lambda itself is architected to scale well. Scroll down and in the **Basic Settings** increase the timeout to **7** seconds.
+
+12. Configure your trigger. In the **Add triggers** column on the left select **Alexa Skills Kit**.  If you do not see Alexa Skills Kit in the list, jump back to step 3 on this page.
 
     ![](02-configure-trigger.png)
 
     **Scroll down** and click the **Add** button (it is easy to miss this button as it is off the bottom of the screen). Then click the **Save** button in the top right. You should see a green success message at the top of your screen.
 
-    Click the box with the **Lambda icon followed by the name of your function** (gamebook if you used our suggestion) and scroll down to the field called **Function code**.
+    Click the box with the **Lambda icon followed by the name of your function** (alexaFBSkillQuoteToday if you used our suggestion) and scroll down to the field called **Function code**.
 
-10.  Our gamebook skill reads in data from Twine's html export. The data is in XML format and we have converted it to JSON with the node library xml2js. All libraries and dependencies must be uploaded for our Lambda code to access.
-  * Under **code entry type** select **Upload a .ZIP file**.
-  * **Upload** the zip file **lambda/custom/gamebook.zip**.
-  * Click **Save**.
-  * Under **code entry type** select **Edit code inline**. You should see our code.
-
-11.  Alexa expects a response from backend processing within 8 seconds, so after receiving and sending the messages we will be left with around 7 seconds. Remember to keep response times short-and-snappy when designing Skills. If your skill becomes popular you may need to think about how to access data from very large database tables, cope with timeouts when calling external services, cache data, and many other things. Lambda itself is architected to scale well. Scroll down and in the **Basic Settings** increase the timeout to **7** seconds.
-
-12.  Lambda needs to be provided with all the code and libraries that might be called. We uploaded a zip file with the node_modules that our skill uses (alexa-sdk and xml2js). If you want to create a very simple Alexa Skill, you could use **blueprints** and the **alexa-skill-kit-sdk-factskill**. This creates a Lambda function with the alexa-sdk preloaded.
-If you create your own zip file package then be careful to have everything in the root of the zip and not the custom folder.
-
-13.  Tell Lambda what your Alexa Skill's app id is. The JSON messages arriving from Alexa will include the app id. Alexa-sdk will check that the messages are not coming from another source i.e. someone is spoofing your app.
-
-    Under **Environment Variables** create a new one called **APP_ID**. In a new browser tab go back to the Alexa App you created earlier in [developer.amazon.com](https://developer.amazon.com/edw/home.html#/skills).
-
-    Click on **View Skill Id** below your app name and select the skill id similar to "amzn1.ask.skill.*d769cd05-db64-464b-bb53-ef4177edb7e2*"
-
-    Paste this in as your **APP_ID** environment variable. Careful not to include a leading or trailing space. Click **Save**.
-
-    Inside our code we can access this value as **process.env.APP_ID**.
-
-14. Send a test message to the new function.
+13. Send a test message to the new function.
 
     Near the top-right of the screen, by the Test and Save buttons, select **Configure test events** in the dropdown.
 
     We are creating a **new test event**, so select **Alexa Start Session** and give it a name like **AlexaStart*.
 
-    Update the 2 occurrences of the app id with your actual app id retrieved for the environment variable in the previous step.
+    Update the 2 occurances of the app id with your actual app id retrieved for the environment variable in the previous step.
 
     something like changing:
     ```json
