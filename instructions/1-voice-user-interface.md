@@ -28,20 +28,20 @@ There are two parts to an Alexa flash briefing skill.  The first part is the ski
 	### Skill Information Tips
 
     - **Skill Type** For this skill, we are creating a skill using the Flash Briefing Skill API.
-    - **Language** Choose the first language you want to support.  You can add additional languages in the future, but we need to start with one.  (This guide is using U.S. English to start.)
+    - **Language** Choose the language you want to support. A Flash Briefing can only support one language. (This guide is using U.S. English to start.)
     - **Name** This is the name that will be shown in the Alexa Skills Store, and the name your users will refer to.
 
-6.  Click the **Save** button, then click on **Next** to move to the **Interaction Model**.
+6.  Click the **Save** button, then click on **Next** to move to the **Interaction Model** screen.
 
 	<img src="https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/1-6-next-button._TTH_.png" />
 
-	There is no interaction model required for a flash briefing skill.
+	There is no interaction model for a flash briefing skill.
 
 6.  Click the **Next** button to move to the **Configuration** screen.
 
 	<img src="https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/1-6-next-button._TTH_.png" />
 
-7.  In our next step of this guide, we will be creating our Lambda function and API endpoint in the AWS developer console, but keep this browser tab open, because we will be returning here on [Page #3: Connect VUI to Code](./3-connect-vui-to-code.md).
+7.  In our next step of this guide, we will be creating our Lambda function and API endpoint in the AWS developer console.
 
 <br/><br/>
 <a href="./2-lambda-function.md"><img src="https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/buttons/button_next_lambda_function._TTH_.png" /></a>
