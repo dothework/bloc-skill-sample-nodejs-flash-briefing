@@ -13,16 +13,14 @@
             ],
             "name": "My Flash Briefing",
             "description": "Designed for you. Everyday you'll hear a swell quote.\n\nPlease leave a 5-star review if you love this Skill. Your 5-star reviews encourage us to keep making more great Skills!",
-          "smallIconUri": "https://s3.amazonaws.com/sixvoices.alexa.skills/sounds/sound-waves-brown-108.png",
-          "largeIconUri": "https://s3.amazonaws.com/sixvoices.alexa.skills/sounds/sound-waves-brown-512.png"
+          "smallIconUri": "https://path/to/you-skill-icon-108.png",
+          "largeIconUri": "https://path/to/you-skill-icon-512.png"
           }
         },
         "isAvailableWorldwide": false,
         "testingInstructions": "none",
         "category": "LIFESTYLE",
-        "distributionCountries": [
-          "US"
-        ]
+        "distributionCountries": []
       },
       "apis": {
         "flashBriefing": {
@@ -33,7 +31,7 @@
                 {
                   "isDefault": true,
                   "vuiPreamble": "From My Flash Briefing...",
-                  "imageUri": "https://s3.amazonaws.com/sixvoices.alexa.skills/sounds/sound-waves-brown-512.png",
+                  "imageUri": "https://path/to/you-skill-icon-512.png",
                   "name": "My Flash Briefing Quote",
                   "genre": "Lifestyle",
                   "updateFrequency": "DAILY",

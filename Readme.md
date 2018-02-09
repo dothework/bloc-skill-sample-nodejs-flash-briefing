@@ -24,9 +24,9 @@ Alexa, flash briefing.
 * `/.ask`	- [ASK CLI (Command Line Interface) Configuration](https://developer.amazon.com/docs/smapi/ask-cli-intro.html)	 
 * `/lambda/src` - Back-End Logic for the Alexa Skill hosted on [AWS Lambda](https://aws.amazon.com/lambda/)
 * `/instructions` - Step-by-Step Instructions for Getting Started
-* `skill.json`	- [Skill Manifest](https://developer.amazon.com/docs/smapi/skill-manifest.html)
+* `skill.json`- [Skill Manifest](https://developer.amazon.com/docs/smapi/skill-manifest.html)
 
-## Setup w/ ASK CLI
+## Setup w/ ASK CLI & AWS Management Consoles
 
 ### Pre-requisites
 
@@ -42,25 +42,64 @@ Alexa, flash briefing.
 	$ git clone https://github.com/dothework/bloc-skill-sample-nodejs-flash-briefing/
 	```
 
-2. Initiatialize the [ASK CLI](https://developer.amazon.com/docs/smapi/quick-start-alexa-skills-kit-command-line-interface.html) by Navigating into the repository and running the command: `ask init`. Follow the prompts.
+2. Initialize the [ASK CLI](https://developer.amazon.com/docs/smapi/quick-start-alexa-skills-kit-command-line-interface.html) by Navigating into the repository and running the command: `ask init`. Follow the prompts.
 
 	```bash
 	$ cd bloc-skill-sample-nodejs-flash-briefing
 	$ ask init
 	```
 
-### Deployment
+### AWS Deployment
 
-1. Create the Lambda function. You can also change the name of the function to suit your needs. Upload the ```./lamdba/index.zip``` package.
+1. Create a Lambda function. This sample expects the name to be _alexaFBSkillQuoteToday_. If you choose another name you will have to adjust accordingly.
 
-2. Deploy to the API Gateway.
+	- Do not use a template.
+	- Select the Node.js 6.10 runtime.
+	- Set the execution role appropriately.
+	- Do not add any triggers at this point.
+	- Choose 'Upload a .ZIP' file as the Code entry type. Upload the archive located at `./lamdba/index.zip`
+	- Save the function.
 
-3. Edit the url value in ```./skill.json```. Replace the existing value  `https://aaaaaaaaaa.execute-api.us-east-1.amazonaws.com/prod/alexaFBSkillQuoteToday` with your API endpoint from step 2 above.
+	> The ASK CLI does not currently support creation and deployment of the backend for Flash Briefing skills.
 
-4. Deploy the skill by running the following command:
+2. Create the API Gateway endpoint. This sample expects the endpoint name to be _alexaFBSkillQuoteToday_. If you choose another name you will have to adjust accordingly.
+
+	- Open the Lambda function created above.
+	- Add an API Gateway Trigger.
+	- Enter _alexaFBSkillQuoteToday_ as the API name.
+	- Select 'prod' as the Deployment stage.
+	- Choose 'Open' as the Security option.
+	- Click Add at the bottom of the API Gateway section.
+	- Click Save at the top of the page to save all changes and create the API Gateway endpoint.
+	- Copy the Invoke URL. You will use this in the next step.
+
+	> Consider modifying the API Authorization options as future task.
+
+### Customization
+
+1. ```./skill.json```
+
+	- Edit the url value of the . Replace the existing value  `https://aaaaaaaaaa.execute-api.us-east-1.amazonaws.com/prod/alexaFBSkillQuoteToday` with the Invoke URL from step 2 above.
+	- Change the skill name, skill description, feed details, icons, testing instructions etc ... See the Skill [Manifest Documentation](https://developer.amazon.com/docs/smapi/skill-manifest.html) for more information.
+
+2. ```./lambda/src/index.js```
+
+  Modify the `skillTitle` constant.
+
+3. ```./lambda/src/data.js```
+
+	Modify the daily tip/quote data.  
+
+4. ```./lamdba/src/package.json```
+
+	If you changed the name of the lambda function in [Deployment Step 1](#deployment) above modify the `--function-name 'alexaFBSkillQuoteToday'` accordingly.
+
+5. Deploy the Lambda function. Navigate into the `/lambda/src` directory and run the npm command: `npm run deploy`
+
+	**Only run the `npm run deploy` command after you've created the function in the AWS [Lambda Management Console](https://console.aws.amazon.com/lambda/home).** Executions will fail if the function does not already exist.  
 
 	```bash
-	$ ask deploy
+	$ npm run deploy
 	```
 
 ### Testing
@@ -73,33 +112,9 @@ Alexa, flash briefing.
 	Alexa, flash briefing
 	```
 
-## Customization
+### Certification
 
-1. ```./skill.json```
-
-  Change the skill name, skill description, feed details, icons, testing instructions etc ...
-
-  See the Skill [Manifest Documentation](https://developer.amazon.com/docs/smapi/skill-manifest.html) for more information.
-
-2. ```./lambda/src/index.js```
-
-  Modify the `skillTitle` constant.
-
-3. ```./lambda/src/data.js```
-
-	Modify the daily tip/quote data.  
-
-4. ```./lamdba/src/package.json```
-
-	If you changed the name of the lambda function in Deployment Step 1 above modify the `--function-name 'alexaFBSkillQuoteToday'` accordingly.
-
-5. Deploy the Lambda function. Navigate into the `/lambda/src` directory and run the npm command: `npm run deploy`
-
-	**Only run the `npm run deploy` command after you've created the function in the AWS [Lambda Management Console](https://console.aws.amazon.com/lambda/home).** Executions will fail if the function does not already exist.  
-
-	```bash
-	$ npm run deploy
-	```
+When you have tested your skill and made any final adjustments to the content and/or it's behavior, submit the skill for certification from the Alexa Developer Console.
 
 ## Additional Resources
 
