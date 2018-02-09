@@ -11,37 +11,36 @@ There are two parts to an Alexa skill.  The first part is the [Voice User Interf
 
 2.  Once you have signed in, **click the Alexa button** at the top of the screen.
 
-    <a href="https://developer.amazon.com/edw/home.html#/" target="_new"><img src="https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/1-2-alexa-button._TTH_.png" /></a>
+	<a href="https://developer.amazon.com/edw/home.html#/" target="_new"><img src="https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/1-2-alexa-button._TTH_.png" /></a>
 
 3.  On the Alexa page, choose the **Get Started** button for the Alexa Skills Kit.
 
-    <a href="https://developer.amazon.com/edw/home.html#/skills/list" target="_new"><img src="https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/1-3-alexa-skills-kit._TTH_.png" /></a>
+	<a href="https://developer.amazon.com/edw/home.html#/skills/list" target="_new"><img src="https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/1-3-alexa-skills-kit._TTH_.png" /></a>
 
 4.  Select **Add A New Skill.** This will get you to the first page of your new Alexa skill.
 
-    <a href="https://developer.amazon.com/edw/home.html#/skill/create/" target="_new"><img src="https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/1-4-add-a-new-skill._TTH_.png" /></a>
+	<a href="https://developer.amazon.com/edw/home.html#/skill/create/" target="_new"><img src="https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/1-4-add-a-new-skill._TTH_.png" /></a>
 
 5.  **Fill out the Skill Information screen.**  Make sure to review the tips we provide below the screenshot.
 
-    ![](1-new-skill-information.png)
+	![](1-10-sample-utterances._TTH_.png)
 
-    ### Skill Information Tips
-    1.  **Skill Type** For this skill, we are creating a skill using the Flash Briefing Skill API.
 
-    2.  **Language** Choose the first language you want to support.  You can add additional languages in the future, but we need to start with one.  (This guide is using U.S. English to start.)
+	**Skill Information Tips**
+	1.**Skill Type** For this skill, we are creating a skill using the Flash Briefing Skill API.
 
-    3.  **Name** This is the name that will be shown in the Alexa Skills Store, and the name your users will refer to.
-
+	2. **Language** Choose the first language you want to support.  You can add additional languages in the future, but we need to start with one.  (This guide is using U.S. English to start.)
+	3. **Name** This is the name that will be shown in the Alexa Skills Store, and the name your users will refer to.
 
 5.  Click on **Save** button, then click on **Next** to move to the **Interaction Model**.
 
-   <img src="https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/1-6-next-button._TTH_.png" />
+	<img src="https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/1-6-next-button._TTH_.png" />
 
-   There is no interaction model required for a flash briefing skill.
+	There is no interaction model required for a flash briefing skill.
 
 6.  **Click the Next button to move to the Configuration screen.**
 
-    <img src="https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/1-6-next-button._TTH_.png" />
+	<img src="https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/1-6-next-button._TTH_.png" />
 
 7.  In our next step of this guide, we will be creating our Lambda function in the AWS developer console, but keep this browser tab open, because we will be returning here on [Page #3: Connect VUI to Code](./3-connect-vui-to-code.md).
 
