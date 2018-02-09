@@ -61,9 +61,23 @@ In the [first step of this guide](../instructions/1-voice-user-interface.md), we
   	- Choose **Open** as the Security option.
   	- Click **Add** at the bottom of the API Gateway section.
   	- Scroll up and click **Save** to save all changes and create the API Gateway endpoint.
-  	- Copy the Invoke URL. You will use this in the next step.
 
   	> Consider modifying the API Authorization options as future task.
+
+    ![](02-trigger-settings.png)
+
+    - Scroll down and copy the **Invoke URL**.
+    - You can click on the Invoke URL link. It should return a JSON value similar to:
+
+    ```JSON
+      {
+        updateDate:'1/10',
+        titleText:'hello',
+        mainText:'Think like a queen. A queen ...'
+      }
+    ```
+
+    ![](02-api-endpoint.png)
 
 13. Send a test message to the new function.
 
