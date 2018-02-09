@@ -23,8 +23,7 @@ There are two parts to an Alexa flash briefing skill.  The first part is the ski
 
 5.  Fill out the **Skill Information** screen. Make sure to review the **Skill Information Tips** below this screenshot.
 
-	![](1-10-sample-utterances._TTH_.png)
-
+	![](1-new-skill-information.png)
 
 	### Skill Information Tips
   1. **Skill Type** For this skill, we are creating a skill using the Flash Briefing Skill API.
