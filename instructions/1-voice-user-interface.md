@@ -3,7 +3,7 @@
 
 ## Setting up Your Alexa Skill in the Developer Portal
 
-There are two parts to an Alexa flash briefing skill.  The first part is the skill configuration and public facing details.  This is where we define the skill and specify where the skill can access the flash briefing data.  The second part is the combination of the actual code logic and API endpoint for our skill, and we will handle that on [page #2](./2-lambda-function.md) of this instructions guide.
+There are two parts to an Alexa flash briefing skill.  The first part is the skill configuration and public facing details.  This is where we define the skill and specify where the skill will access the flash briefing data.  The second part is the combination of the actual code logic and API endpoint for our skill, and we will handle that in the [Lambda Function step](./2-lambda-function.md) of this guide. 
 
 1.  Go to the **[Amazon Developer Portal](http://developer.amazon.com).**  In the top-right corner of the screen, click the **Sign In** button.</br>(If you don't already have an account, you will be able to create a new one for free.)
 
@@ -28,14 +28,14 @@ There are two parts to an Alexa flash briefing skill.  The first part is the ski
 	### Skill Information Tips
 
     - **Skill Type** For this skill, we are creating a skill using the Flash Briefing Skill API.
-    - **Language** Choose the language you want to support. A Flash Briefing can only support one language. (This guide is using U.S. English to start.)
-    - **Name** This is the name that will be shown in the Alexa Skills Store, and the name your users will refer to.
+    - **Language** Choose the language you want to support. A Flash Briefing Skill can only support one language. (This guide is using U.S. English to start.) 
+    - **Name** This is the name that will be shown in the Alexa Skills Store and the name your users will refer to.
 
 6.  Click the **Save** button, then click on **Next** to move to the **Interaction Model** screen.
 
 	<img src="https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/1-6-next-button._TTH_.png" />
 
-	There is no interaction model for a flash briefing skill.
+	> There is no interaction model for a flash briefing skill. 
 
 6.  Click the **Next** button to move to the **Configuration** screen.
 

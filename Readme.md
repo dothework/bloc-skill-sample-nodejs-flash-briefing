@@ -88,11 +88,11 @@ Alexa, flash briefing.
 
 3. ```./lambda/src/data.js```
 
-	Modify the daily tip/quote data.  
+	Modify the daily tip/quote data. See the [Additional Resources](#additional-resources) section below for a tool to ease this effort.
 
 4. ```./lambda/src/package.json```
 
-	If you changed the name of the lambda function in [Deployment Step 1](#deployment) above modify the `--function-name 'alexaFBSkillQuoteToday'` accordingly.
+	If you changed the name of the lambda function in [AWS Deployment](#aws-deployment) section above, modify the `--function-name 'alexaFBSkillQuoteToday'` accordingly.
 
 5. Deploy the Lambda function. Navigate into the `/lambda/src` directory and run the npm command: `npm run deploy`
 

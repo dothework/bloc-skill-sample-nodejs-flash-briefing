@@ -1,36 +1,42 @@
 # Build An Alexa Flash Briefing Skill
 [![Voice User Interface](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/navigation/1-locked._TTH_.png)](./1-voice-user-interface.md)[![Lambda Function](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/navigation/2-locked._TTH_.png)](./2-lambda-function.md)[![Connect VUI to Code](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/navigation/3-locked._TTH_.png)](./3-connect-vui-to-code.md)[![Testing](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/navigation/4-locked._TTH_.png)](./4-testing.md)[![Customization](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/navigation/5-on._TTH_.png)](./5-customization.md)[![Publication](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/navigation/6-off._TTH_.png)](./6-publication.md)
 
-## Add Additional Languages (Optional)
+## Required Customization 
 
-You can use the Alexa Skills Kit to create skills in multiple languages. A skill can support a single language, or any combination of the available languages:
-* English (US)
-* English (UK)
-* German
+###Replace the Provided Data with Your Own
 
-For more on developing skills in multiple languages, go [here](https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/developing-skills-in-multiple-languages).
+1. Modify the Node.js code to edit the **skill's title**.
 
-1. To add an additional language, simply select the Add New Language tab in Developer Portal and choose your second language. Choose and fill all necessary information like we did for the initial language of your skill. You will need to define Name and Invocation Name for the current language (e.g. German name for German skills). Then click Save to continue.
-![](https://s3.amazonaws.com/lantern-code-samples-images/trivia/german_info.PNG)
+	![](05-customization-index.png)
 
-2. In the Interaction Model section, our skill shares the same intent schema and uses different sample utterances and custom slot type values in different languages. Copy the corresponding .json model from the [GitHub repository here](https://github.com/alexa/skill-sample-nodejs-trivia/tree/en-US/models) into the "code" section in the Skill Builder to change sample utterances into your second language. We will not be using custom slots in this template, but slot type values should be put in the new language if your skill has them. For Reindeer Trivia in German, go [GitHub repository here](https://github.com/alexa/skill-sample-nodejs-trivia/tree/en-US/models/de-DE.json) for a sample model.
-![](https://s3.amazonaws.com/lantern-code-samples-images/trivia/german_intent.PNG)
+	- Open ```./lambda/src/index.js```
+	- Edit the **skillTitle** constant
+	- Save the file
 
-3. Open the source file for your Lambda function, index.js. In the languageString variable, look up the locale for your current language, edit the language strings, and other message like you did for your initial language. Also remember to edit questions in questions.js. Questions and answers are supposed to be defined using your second language.
-![](https://s3.amazonaws.com/lantern-code-samples-images/trivia/source_code2.png)
-![](https://s3.amazonaws.com/lantern-code-samples-images/trivia/german_questions.PNG)
+2. Modify the Node.js code to edit the **daily data**. 
 
-4. For better latency, deploying your code to different endpoints is recommended. Follow the Create Lambda Function instructions in Step 2 and be sure to select an appropriate Lambda region. Select **US East (N. Virginia)** for US skills and **EU (Ireland)** for UK/DE skills. Copy the ARN for use in the Configuration section of the Amazon Developer Portal.
+	![](05-customization-data.png)
+	
+	- Use this [Google Sheets template](https://docs.google.com/spreadsheets/d/1_pitjZcZ46vReytXG2sAOg4eD5U2VS_Pe83a1-PoKIQ/edit?usp=sharing) to ease the creation of your data.
+	- Open```./lambda/src/data.js```
+	- Replace the existing data your own
+	- Save the file
 
-5. Go back to skill Configuration section, which contains Global fields for all languages. Add an extra endpoint and paste your Lambda ARN. Save your skill configuration information.
+3. **Archive the Lambda function code**. Navigate into the `/lambda/src` directory and run the npm command: `npm run zip`. This will overwrite or create `/lambda/index.zip`.
 
-![](https://s3.amazonaws.com/lantern-code-samples-images/trivia/german_lambda.PNG)
+	```bash
+	$ npm run zip
+	```
 
-6. Test your skill in the second language using Service Simulator or a device.
+4.  **Upload the code**.
+  * Open your skill's Lambda funciton in the AWS [Lambda Management Console](https://console.aws.amazon.com/lambda/home).
+  * Under **code entry type** select **Upload a .ZIP file**.
+  * **Upload** the **lambda/index.zip** file you just created.
+  * Click **Save**.
 
-4.  **Once you have made the updates listed on this page, you can click "Next" to move on to Publishing and Certification of your skill.**
+5. **Test** your updated skill using the same methods in the [Testing](./4-testing.md) step and resolve any errors or issues as needed.
 
-    <a href="./"><img src="https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/3-7-next-button._TTH_.png" /></a>
+5. Move on to the [Publication](./6-publication.md) step. 
 
 <br/><br/>
 <a href="./6-publication.md"><img src="https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/buttons/button_next_publication._TTH_.png" /></a>

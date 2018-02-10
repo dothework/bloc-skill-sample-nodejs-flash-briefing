@@ -1,31 +1,39 @@
 # Build An Alexa Flash Briefing Skill
 [![Voice User Interface](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/navigation/1-locked._TTH_.png)](./1-voice-user-interface.md)[![Lambda Function](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/navigation/2-locked._TTH_.png)](./2-lambda-function.md)[![Connect VUI to Code](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/navigation/3-on._TTH_.png)](./3-connect-vui-to-code.md)[![Testing](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/navigation/4-off._TTH_.png)](./4-testing.md)[![Customization](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/navigation/5-off._TTH_.png)](./5-customization.md)[![Publication](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/navigation/6-off._TTH_.png)](./6-publication.md)
 
-## Connecting Your Voice User Interface To Your Lambda Function
+## Connecting Your Flash Briefing Skill To Your API Endpoint
 
-On [page #1](./1-voice-user-interface.md) of this guide, we created a voice user interface for the intents and utterances we expect from our users.  On [page #2](./2-lambda-function.md), we created a Lambda function that contains all of our logic for the skill.  On this page, we need to connect those two pieces together.
+In [Voice User Interface step](./1-voice-user-interface.md) of this guide, we created our skill.  In [Lambda Function step](./2-lambda-function.md), we created a Lambda function and API Endpoint for the skill.  In this step, we connect those two pieces together.
 
-1.  **Go back to the [Amazon Developer Portal](https://developer.amazon.com/edw/home.html#/skills/list) and select your skill from the list.** You may still have a browser tab open if you started at the beginning of this tutorial.
+1.  Go back to the **[Amazon Developer Portal](https://developer.amazon.com/edw/home.html#/skills/list)** and select your skill from the list. You may still have a browser tab open if you started at the beginning of this tutorial.
 
-2.  **Open the "Configuration" tab on the left side.**
+2.  Open the **Configuration** tab on the left side.
 
     <img src="https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/3-2-configuration-tab._TTH_.png" />
 
-3.  **Select the "AWS Lambda ARN" option for your endpoint.** You have the ability to host your code anywhere that you would like, but for the purposes of simplicity and frugality, we are using AWS Lambda. ([Read more about Hosting Your Own Custom Skill Web Service](https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/developing-an-alexa-skill-as-a-web-service).)  With the AWS Free Tier, you get 1,000,000 free requests per month, up to 3.2 million seconds of compute time per month. Learn more at https://aws.amazon.com/free/.  In addition, Amazon now offers [AWS Promotional Credits for developers who have live Alexa skills that incur costs on AWS related to those skills](https://developer.amazon.com/alexa-skills-kit/alexa-aws-credits).
+3.  Enter a **Custom Error Message**, then click **Add new feed**. 
 
-    <img src="https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/3-3-aws-lambda-arn._TTH_.png" />
+    ![](03-custom-error.png)
 
-4.  **Select "North America" or "Europe" as your geographical region.** IMPORTANT: Make sure you select the same region that you created your Lambda in.  Remember, Alexa skills using AWS Lambda can only run in N. Virginia (North America) and Ireland (Europe).
+4. Fill out the **Feed Information** screen. Make sure to review the **Feed Information Tips** below this screenshot.
 
-    <img src="https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/3-4-choose-region._TTH_.png" />
+   ![](03-feed-information.png) 
 
-5.  **Paste your Lambda's ARN (Amazon Resource Name) into the textbox provided.** It should look similar to the screenshot above.
+	### Feed Information Tips
 
-6.  **Leave "Account Linking" set to "No."** For this skill, we won't be using Account Linking, but you can learn more about [Linking an Alexa User with a User in Your System.](https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/linking-an-alexa-user-with-a-user-in-your-system)
+    - **Preamble** Enter an appropriate preamble. 
+    - **Name** The name is only shown in the developer portal.
+    - **Content update frequency** This template provides an update daily.
+    - **Content type** Select the **Text** option.
+    - **Content genre** Choose the appropriate genre.
+    - **URL** Enter the **Invoke URL** you created in the [Lambda Function step](./2-lambda-function.md) of this guide.
+	- **Feed Icon** Upload your skill's 512x512px icon. You can find detailed instructions for icons in the [Publication step](6-publication.md). 
+    
+5.  Click the **Save** button, then click on **Next** to move to the **Testing** screen.
 
-7.  **Click the "Next" button to continue to page #4 of this guide.**
+	![Next](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/3-7-next-button._TTH_.png)
 
-    [![Testing](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/3-7-next-button._TTH_.png)](./4-testing.md)
+6.  In our next step of this guide, we will be testing the flash briefing skill.
 
 <br/><br/>
 <a href="./4-testing.md"><img src="https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/buttons/button_next_testing._TTH_.png" /></a>
