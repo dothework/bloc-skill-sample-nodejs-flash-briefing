@@ -84,7 +84,7 @@ Alexa, flash briefing.
 
 2. ```./lambda/src/index.js```
 
-  Modify the `skillTitle` constant.
+	Modify the `skillTitle` constant.
 
 3. ```./lambda/src/data.js```
 
@@ -99,7 +99,7 @@ Alexa, flash briefing.
 	**Only run the `npm run deploy` command after you've created the function in the AWS [Lambda Management Console](https://console.aws.amazon.com/lambda/home).** Executions will fail if the function does not already exist.  
 
 	```bash
-	& cd lambda/src/
+	$ cd lambda/src/
 	$ npm run deploy
 	```
 6. Deploy the skill using the ASK CLI.
