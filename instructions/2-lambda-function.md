@@ -68,10 +68,10 @@ In the [Voice User Interface step](../instructions/1-voice-user-interface.md) we
 
 	    ```JSON
 	    {
-	      uid:"urn:uuid:1335c695-cfb8-4ebb-abbd-81da344efa6b"
-	      updateDate:"1/10",
-	      titleText:"hello",
-	      mainText:"Think like a queen. A queen ..."
+	      "uid":"urn:uuid:1335c695-cfb8-4ebb-abbd-81da344efa6b"
+	      "updateDate":"1/10",
+	      "titleText":"hello",
+	      "mainText":"Think like a queen. A queen ..."
 	    }
 	    ```
 
@@ -79,5 +79,5 @@ In the [Voice User Interface step](../instructions/1-voice-user-interface.md) we
 
 12.  In our next step of this guide, we will be connecting our flash briefing skill to the API endpoint we created in this step.
 
-    <br/><br/>
-    <a href="./3-connect-vui-to-code.md"><img src="https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/buttons/button_next_connect_vui_to_code._TTH_.png"/></a>
+<br/><br/>
+<a href="./3-connect-vui-to-code.md"><img src="https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/buttons/button_next_connect_vui_to_code._TTH_.png"/></a>
