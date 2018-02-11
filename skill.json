@@ -17,9 +17,9 @@
           "largeIconUri": "https://path/to/you-skill-icon-512.png"
           }
         },
-        "isAvailableWorldwide": false,
+        "isAvailableWorldwide": true,
         "testingInstructions": "none",
-        "category": "LIFESTYLE",
+        "category": "SELF_IMPROVEMENT",
         "distributionCountries": []
       },
       "apis": {

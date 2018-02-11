@@ -42,9 +42,9 @@ In the [Voice User Interface step](../instructions/1-voice-user-interface.md) we
   * Under **code entry type** select **Upload a .ZIP file**.
   * **Upload** the **lambda/index.zip** file located in your project folder.
   * Click **Save**.
- 	
+
 	**You will customize the flash briefing in the [Customization Step](./5-customization.md). You then update the Lambda then.**
-	
+
 	![](02-upload-archive.png)
 
 10. Configure your **trigger** and setup the **API Gateway**. In the **Add triggers** column on the left select **API Gateway**.
@@ -69,9 +69,9 @@ In the [Voice User Interface step](../instructions/1-voice-user-interface.md) we
 	    ```JSON
 	    {
 	      "uid":"urn:uuid:1335c695-cfb8-4ebb-abbd-81da344efa6b"
-	      "updateDate":"1/10",
-	      "titleText":"hello",
-	      "mainText":"Think like a queen. A queen ..."
+	      "updateDate":"2018-02-11T15:34:51.479Z",
+	      "My Flash Briefing: February 11",
+	      "mainText":"Think like a queen. A queen is not afraid to fail. Failure is another steppingstone to greatness."
 	    }
 	    ```
 
