@@ -11,7 +11,7 @@ So far, we have [created a skill](./1-voice-user-interface.md) and [a Lambda fun
 
     <img src="https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/4-2-test-tab._TTH_.png" />
 
-3.	**Enable Testing** by clicking on the slider button.**
+3.	**Enable Testing** by clicking on the slider button.
 
 	![](04-testing.png)
 
@@ -23,7 +23,7 @@ So far, we have [created a skill](./1-voice-user-interface.md) and [a Lambda fun
     *  [Echosim.io](https://echosim.io) - a browser-based Alexa skill testing tool that works with flash briefings.
     *  [Unit Testing with Alexa](https://github.com/alexa/alexa-cookbook/tree/master/testing/postman/README.md) - a modern approach to unit testing your Alexa skills with [Postman](http://getpostman.com) and [Amazon API Gateway](http://aws.amazon.com/apigateway).
 
-5.  If your flash briefing skill is working properly, you can now **customize your skill**.
+5.  If your flash briefing skill is working properly, you can now **customize it**.
 
 <br/><br/>
-<a href="./5-customization.md"><img src="https://m.media-amazon.com/images/G/01/mobile-apps/dex/alea/alexa-skills-kit/tutorials/general/buttons/button_next_customization._TTH_.png" /></a>
+<a href="./5-customization.md"><img src="https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/buttons/button_next_customization._TTH_.png" /></a>
