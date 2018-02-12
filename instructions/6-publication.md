@@ -15,7 +15,7 @@ You are almost done! The last step is to add the metadata that your skill will u
 
     *  **For Category select "Lifestyle."**  You will also be presented with a **Sub-Category** option. Choose the appropriate option there. Select another Category as appropriate.
 
-    *  **Provide testing instructions.** Testing instructions give you an opportunity to explain your skill, and any special or possibly confusing features, to the certification team. A value is required in this box. You can enter "none". 
+    *  **Provide testing instructions.** Testing instructions give you an opportunity to explain your skill, and any special or possibly confusing features, to the certification team. A value is required in this box. You can enter "none".
 
     *  **Countries and Region can be for "all countries", unless you have a specific reason to exclude a specific location.**  This gives Amazon the ability to distribute your skill globally. Remember that you will need to create additional versions of your skill in the other available languages before they will be available in those countries.
 
@@ -30,9 +30,9 @@ You are almost done! The last step is to add the metadata that your skill will u
     <img src="https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/6-5-keywords._TTH_.png" />
 
 4.  Create your **skill's icons**.  You need two sizes of your icon: 108x108px and 512x512px.
-	
+
 	> You should use the icon you created for the Feed in the [customization step](./5-customization.md).
-	
+
     <img src="https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/6-6-icons._TTH_.png" />
 
     *  **Make sure you have the rights to the icons you create.** Please don't violate any trademarks or copyrights.
@@ -58,7 +58,7 @@ You are almost done! The last step is to add the metadata that your skill will u
 
     ![Next](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/3-7-next-button._TTH_.png)
 
-8.  Complete the **Privacy and Compliance** sections using the guidance below. 
+8.  Complete the **Privacy and Compliance** sections using the guidance below.
 
     ![](06-privacy-compliance.png)
 
@@ -98,10 +98,8 @@ You are almost done! The last step is to add the metadata that your skill will u
 
 15. You are **done** with your submission! Here are a few things to consider:
 
-    *  **Certification can take several days to complete.** 
+    *  **Certification can take several days to complete.**
 
-    *  **Did something go wrong?** Amazon's team of Alexa evangelists run [online office hours every Tuesday from 1-2pm Pacific Time](https://attendee.gotowebinar.com/rt/8389200425172113931).  They can help answer any questions you might have. 
+    *  **Did something go wrong?** Amazon's team of Alexa evangelists run [online office hours every Tuesday from 1-2pm Pacific Time](https://attendee.gotowebinar.com/rt/8389200425172113931).  They can help answer any questions you might have.
 
     *  **Want some free Alexa goodies?** Every month, Amazon creates a brand-new Alexa Developer t-shirt or hoodie, and sends them out to developers that published a skill that month.  [You can get yours here if you live in the US](https://developer.amazon.com/alexa-skills-kit/alexa-developer-skill-promotion), [here for the UK](https://developer.amazon.com/en-gb/alexa-skills-kit/alexa-developer-skill-promotion), and [here for Germany](https://developer.amazon.com/de-de/alexa-skills-kit/alexa-developer-skill-promotion).
-
-<img height="1" width="1" src="https://www.facebook.com/tr?id=1847448698846169&ev=PageView&noscript=1"/>
