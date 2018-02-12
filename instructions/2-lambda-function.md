@@ -68,7 +68,7 @@ In the [Voice User Interface step](../instructions/1-voice-user-interface.md) we
 
 	    ```JSON
 	    {
-	      "uid":"urn:uuid:1335c695-cfb8-4ebb-abbd-81da344efa6b"
+	      "uid":"urn:uuid:1335c695-cfb8-4ebb-abbd-81da344efa6b",
 	      "updateDate":"2018-02-11T15:34:51.479Z",
 	      "titleText":"My Flash Briefing: February 11",
 	      "mainText":"Think like a queen. A queen is not afraid to fail. Failure is another steppingstone to greatness."
