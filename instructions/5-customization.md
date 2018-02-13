@@ -19,7 +19,7 @@
 
 	- Use this [Google Sheets template](https://docs.google.com/spreadsheets/d/1_pitjZcZ46vReytXG2sAOg4eD5U2VS_Pe83a1-PoKIQ/edit?usp=sharing) to ease the creation of your data.
 	- Open```./lambda/src/data.js```
-	- Replace the existing data your own
+	- Replace the existing data your own data
 	- Save the file
 
 3. **Archive the Lambda function code**. Navigate into the `/lambda/src` directory and run the npm command: `npm run zip`. This will overwrite or create `/lambda/index.zip`.

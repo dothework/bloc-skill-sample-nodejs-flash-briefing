@@ -22,7 +22,7 @@ Alexa, flash briefing.
 * `/.ask`	- [ASK CLI (Command Line Interface) Configuration](https://developer.amazon.com/docs/smapi/ask-cli-intro.html)	 
 * `/lambda/src` - Back-End Logic for the Alexa Skill hosted on [AWS Lambda](https://aws.amazon.com/lambda/)
 * `/instructions` - Step-by-Step Instructions for Getting Started
-* `skill.json`- [Skill Manifest](https://developer.amazon.com/docs/smapi/skill-manifest.html)
+* `skill.json` - [Skill Manifest](https://developer.amazon.com/docs/smapi/skill-manifest.html)
 
 ## Setup w/ ASK CLI & AWS Management Consoles
 
